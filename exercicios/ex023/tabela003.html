@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td> <!-- esse COLSPAN serve para ex o B da tabela ocupar 2 colunas, ficar maior o espaço dele ocupando como se fosse a coluna do C, mas tudo preenchido com B-->
+        </tr>
+        <tr>
+            <td rowspan="3">D</td> <!-- ROWSPAN serve para que o D ocupe 3 espaços na linha, ocupou o espaço como se fosse na seguencia do G e J, mas preencheu com tudo D-->
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table>
+</body>
+</html>
